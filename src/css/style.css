@@ -1,0 +1,99 @@
+:root {
+    --cor-de-fundo: #5BC241;
+    --cor-de-texto: #000;
+    --cor-de-texto-body-selecionado:#fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Outfit:wght@400;700&family=Public+Sans:wght@400;800&display=swap');
+
+body{
+    font-family: 'Fira Code', monospace;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+    background-color: var(--cor-de-texto-body-selecionado);
+}
+
+.menu{
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.menu .logo-marca{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+img{
+    width: 45px;
+    height: 42px;
+}
+
+.menu .logo-marca h2{
+    font-weight: 800;
+}
+
+ul{
+    display: flex;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    justify-content: center;
+
+}
+
+ul li {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    width: 55px;
+    font-size: 15px;
+    margin: 15px;
+    padding: 10px;
+    font-weight: 400;
+    
+
+}
+
+ul li.botao-cadastro{
+    width: 127px;
+    height: 39px;
+}
+
+ul li:hover{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-de-texto-body-selecionado);
+    cursor: pointer;
+}
+
+li.botao-cadastro{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-de-texto-body-selecionado);
+    border-radius: 10px;
+}
+
+@media (max-width: 769px){
+    .menu {
+        flex-direction: column;
+        /* gap: 90px; */
+        align-content: space-around;
+        height: 506px;
+    }
+    
+    ul{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+    ul li{
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+}
